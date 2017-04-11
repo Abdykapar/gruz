@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Найти попутчика в ONLINETAXI.KG</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+	  a.passive_link:hover{
+	     background-color: #335d73;
+	  }
+	  .header1{
+	     color: #fff;
+		text-shadow: 0 2px 4px rgba(0,0,0,.5);
+		font-size: 38px;
+		font-weight: 700;
+		text-align: center;
+		line-height: 46px;
+		margin: 0;
+	  }
+	  .header2{
+	    font-size: 28px;
+		color: #000;
+		font-weight: 700;
+		line-height: 34px;
+		margin: 15px 0 15px;
+		position: relative;
+	  }
+	  .header3{
+	    margin: 4px 0 15px;
+		color: #191919;
+		font-size: 22px;
+		font-weight: 700;
+	  }
+	  .nopadding {
+		padding: 0 !important;
+		margin: 0 !important;
+	  }
+	</style>
+  </head>
+  <body>
+    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px; background-color: #335d73;">
+	<div class="row">
+	<div class="col-md-12" style="margin-top:15px;">
+	
+	<nav class="navbar navbar-inverse" style="border-radius: 0px; background-color: #2b4756; border-color: #2b4756;">
+  <div class="container-fluid">
+    <div class="navbar-header" style="margin-right: 30px;">
+	<a href="index.blade.php" style="line-height: 80px; height: 80px;padding-top: 0px; padding-bottom:0px;">
+	    <img src="img/logo.png" alt="www.onlinetaxi.kg" style="min-height: 70px; height: 70px;">
+	</a>
+    </div>
+	<ul class="nav navbar-nav">
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff; font-size: 18px; line-height: 80px; height: 80px;padding-top: 0px; padding-bottom:0px;">Межгород
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="category_grid.blade.php" style="font-size: 18px;">Поиск водителя</a></li>
+          <li><a href="category_grid.blade.php" style="font-size: 18px;">Поиск пассажира</a></li>
+        </ul>
+      </li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff; font-size: 18px;line-height: 80px; height: 80px;padding-top: 0px; padding-bottom:0px;">По городу
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="category_grid.blade.php" style="font-size: 18px;">Поиск водителя</a></li>
+          <li><a href="category_grid.blade.php" style="font-size: 18px;">Поиск пассажира</a></li>
+        </ul>
+      </li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #fff; font-size: 18px;line-height: 80px; height: 80px;padding-top: 0px; padding-bottom:0px;">Грузовые
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="category_grid.blade.php" style="font-size: 18px;">Поиск груз</a></li>
+          <li><a href="category_grid.blade.php" style="font-size: 18px;">Поиск транспорт</a></li>
+        </ul>
+      </li>
+    </ul>
+	
+	<ul class="nav navbar-nav navbar-right">
+	  <li><a href="#" style="color: #fff; font-size: 18px;line-height: 80px; height: 80px;padding-top: 0px; padding-bottom:0px;"><img src="img/google_play.png" style="height: 50px;"></a></li>
+	  <li><a href="#" style="color: #fff; font-size: 18px;line-height: 80px; height: 80px;padding-top: 0px; padding-bottom:0px;"><img src="img/app_store.png" style="height: 50px;"></a></li>
+	  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="background-color: #335d73; color: #fff; font-size: 18px;line-height: 80px; height: 80px;padding-top: 0px; padding-bottom:0px;">О нас
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="about.html" style="font-size: 18px;">О нас</a></li>
+          <li><a href="send_comment.html" style="font-size: 18px;">Оставь свой отзыв</a></li>
+        </ul>
+      </li>
+      <li><a href="add_item.blade.php" style="background-color: #335d73; color: #fff; font-size: 18px;line-height: 80px; height: 80px;padding-top: 0px; padding-bottom:0px;">+Добавить объявление</a></li>
+    </ul>
+  </div>
+</nav>
+     </div>
+	 </div>
+
+	<div class="container-fluid" style="padding-left: 15px; padding-right: 15px; background-color: #F5F5F5; padding-bottom: 15px; padding-top: 15px;">
+	<div class="row" style="margin-left: 0px !important; margin-right: 0px !important;">
+	 <div class="col-md-11 col-md-offset-1" style="padding: 0px !important;">
+	    <span class="header3">О проекте</span>
+	 </div>
+	 </div>
+	 </div>
+	 
+	 <div class="container-fluid" style="padding-left: 15px; padding-right: 15px; background-color: #fff; padding-bottom: 10px;">
+	<div class="row" style="margin-left: 0px !important; margin-right: 0px !important;  margin-top: 10px !important;">
+	<div class="col-md-10 col-md-offset-1" style="background-color: #F5F5F5; padding: 15px; min-height: 400px;">
+	   <p style="font-size: 16px;">
+	     Собираетесь ли Вы на отдых в горах или просто хотите найти попутчика до работы, мы постараемся Вам помочь. 
+		 По всем вопросам не стесняйтесь оставлять сообщения на форуме. Если вы куда-то едете на машине, 
+		 у Вас есть возможность заработать — взять попутчика, повесив здесь объявление. Если Вам надо куда-то уехать, 
+		 вы можете быстро и удобно добраться на попутке, не связываясь с общественным транспортом. 
+		 Если Вы едете в неизвестные края — посмотрите, может кто-то едет туда же и Вы найдете себе приятного попутчика.<br/><br/>
+		 Собираетесь ли Вы на отдых в горах или просто хотите найти попутчика до работы, мы постараемся Вам помочь. 
+		 По всем вопросам не стесняйтесь оставлять сообщения на форуме. Если вы куда-то едете на машине, 
+		 у Вас есть возможность заработать — взять попутчика, повесив здесь объявление. Если Вам надо куда-то уехать, 
+		 вы можете быстро и удобно добраться на попутке, не связываясь с общественным транспортом. 
+		 Если Вы едете в неизвестные края — посмотрите, может кто-то едет туда же и Вы найдете себе приятного попутчика.<br/><br/>
+		 Собираетесь ли Вы на отдых в горах или просто хотите найти попутчика до работы, мы постараемся Вам помочь. 
+		 По всем вопросам не стесняйтесь оставлять сообщения на форуме. Если вы куда-то едете на машине, 
+		 у Вас есть возможность заработать — взять попутчика, повесив здесь объявление. Если Вам надо куда-то уехать, 
+		 вы можете быстро и удобно добраться на попутке, не связываясь с общественным транспортом. 
+		 Если Вы едете в неизвестные края — посмотрите, может кто-то едет туда же и Вы найдете себе приятного попутчика.
+	   </p>
+	</div>
+	</div>
+	</div>
+	 
+	<div class="container-fluid" style="padding-left: 15px; padding-right: 15px; background-color: #2b4756;">
+	<div class="row" style="margin-left: 0px !important; margin-right: 0px !important;">
+	 <div class="col-md-12" style="min-height: 50px; height: 50px; padding-top: 16px;">
+	    <span style="color: #fff;">©2017 Onlinetaxi.kg Все права защищены.</span>
+	 </div>
+	</div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
